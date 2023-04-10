@@ -17,6 +17,7 @@
 body {
   background-image: url('./4238568.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .board-row {
   display: flex;
