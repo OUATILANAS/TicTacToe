@@ -14,7 +14,7 @@ class ComputerPlayer extends React.Component {
       console.log(difficulty);
       if (difficulty === 'easy') {
         randomIndex = Math.floor(Math.random() * emptySquares.length);
-      } else if (difficulty === 'medium') {
+      } else if (difficulty === 'hard') {
       const rows = [[0, 1, 2], [3, 4, 5], [6, 7, 8]];
     const columns = [[0, 3, 6], [1, 4, 7], [2, 5, 8]];
     const diagonals = [[0, 4, 8], [2, 4, 6]];
@@ -45,7 +45,7 @@ class ComputerPlayer extends React.Component {
     }, []);
     const randomIndex = Math.floor(Math.random() * emptySquares.length);
     return emptySquares[randomIndex];
-      } else if (difficulty === 'hard') {
+      } else if (difficulty === 'medium') {
 const rows = [[0, 1, 2], [3, 4, 5], [6, 7, 8]];
         const columns = [[0, 3, 6], [1, 4, 7], [2, 5, 8]];
         const diagonals = [[0, 4, 8], [2, 4, 6]];
